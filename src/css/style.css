@@ -1,0 +1,125 @@
+/*
+TP 1
+	Thématique : Page d'atterissage_École de danse
+	Auteur : Melnyk Svitlana
+	Date : octobre 2017
+*/
+
+body{
+    font-family: Arial sans-serif;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Entête de la page */
+#header{
+    width:150px;
+    height: 100px;
+    perspective: 150px;
+    margin-left: 15%;
+}
+img {
+    border: 2px solid #52595f;
+}
+.tagline {
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+/* Animation: rotation du logo */
+#logo {
+    transition: 1s ease-in-out;
+}
+#logo:hover {
+    transform: rotateX(360deg);
+}
+
+/* Le corps de la page */
+section {
+    text-align: center;
+}
+
+/* Les images */
+ul {
+    padding-left: 0;
+}
+li {
+    display: inline;
+    padding: 15px;
+}
+
+/* Animation: mise à l'échelle d'image */
+.scale {
+    transition: 1s ease-in-out;
+}
+.scale:hover {
+    box-shadow: 2px 2px 2px #40474d;
+    transform: scale(1.5);
+}
+
+/* Animation: occurrence et disparition d'image */
+.fantome {
+    animation: fadeinout;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeinout {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Formulaire */
+form {
+    margin: auto;
+}
+input {
+    width: 360px;
+    border: 2px solid #52595f;
+}
+.ligne {
+    font-style: italic;
+}
+
+
+/* Animation: entrance d'image */
+.formulaire {
+    width: 500px;
+    height: 375px;
+    margin: auto;
+    animation: entrer linear;
+    animation-duration: 3s;
+}
+@keyframes entrer {
+    0% {
+        transform: translateY(800px);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: linear;
+    }
+}
+
+/* Pied de la page */
+footer {
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+

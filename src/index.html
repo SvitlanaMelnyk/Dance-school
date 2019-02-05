@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+	TP 1
+	Thématique : Page d'atterissage_École de danse
+	Auteur : Melnyk Svitlana
+	Date : octobre 2017
+-->
+    <head>
+        <title>École de danse</title>
+        <meta charset="UTF-8">
+        <meta name="Description" content="page d'atterissage d'école de danse">
+        <meta name="Keywords" content="école, danse, Montréal">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+    <!-- Entête de la page -->
+        <header>
+            <div id="header">
+                <p id="logo"> <img src="images/Logo.jpg" alt="Logo" title="Logo" width="150" height="100"> </p>
+            </div>
+            <p class="tagline">On vit avec!</p>
+        </header>
+
+        <!-- Le corps de la page -->
+        <section>
+            <div>
+                <!-- Les images -->
+                <ul>
+                    <li> <img class="scale" src="images/1.jpg" alt="Ballet classique" title="Ballet classique" width="170" height="230"> </li>
+                    <li> <img class="scale" src="images/2.jpg" alt="Hip-Hop" title="Hip-Hop" width="170" height="230"> </li>
+                    <li> <img class="scale" src="images/3.jpg" alt="Ballet moderne" title="Ballet moderne" width="170" height="230"> </li>
+                </ul>
+            </div>
+
+           <div class="formulaire">
+                <h2 class="fantome">Première classe gratuite</h2>
+
+                <!-- Formulaire -->
+                <form>
+                    <p>Nom:<br>
+                        <input class="ligne" type="text" name="txtNom" placeholder="Melnyk" required>
+                    </p>
+                    <p>Prénom:<br>
+                        <input class="ligne" type="text" name="txtNom" placeholder="Svitlana" required>
+                    </p>
+                    <p>Courriel:<br>
+                        <input class="ligne" type="email" name="txtCourriel" placeholder="svitmelnykd@example.com" required>
+                    </p>
+                    <p>Téléhone:<br>
+                        <input class="ligne" type="tel" name="tel" pattern="[0-9 ]*" placeholder="5145551144" required>
+                    </p>
+                </form>
+                <button>Envoyez!</button>
+            </div>
+        </section>
+
+    <!-- Pied de la page -->
+    <footer>
+        <p>Copyright: Melnyk-2017</p>
+    </footer>
+
+    </body>
+</html>
